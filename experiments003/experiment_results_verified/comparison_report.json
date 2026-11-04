@@ -1,0 +1,2122 @@
+{
+  "comparison_summary": {
+    "pipeline_comparison_table_200_samples": {
+      "Mean_Perplexity": {
+        "max_abs_diff": 1.2140577609898173e-06,
+        "original_values": [
+          313.8294939459668,
+          273.0191238825046,
+          273.57230664098284,
+          275.0600529515763
+        ],
+        "verified_200_values": [
+          313.82949284692506,
+          273.0191235949646,
+          273.5723057591935,
+          275.0600541656341
+        ],
+        "exact_match": true
+      },
+      "CI_Low": {
+        "max_abs_diff": 5.56792190309352e-06,
+        "original_values": [
+          310.12743178667574,
+          266.32706780676307,
+          266.9226898808328,
+          268.1720464946985
+        ],
+        "verified_200_values": [
+          310.1274309619748,
+          266.3270652750889,
+          266.9226897466172,
+          268.1720520626204
+        ],
+        "exact_match": true
+      },
+      "CI_High": {
+        "max_abs_diff": 1.458300971535209e-06,
+        "original_values": [
+          317.55086173595623,
+          279.4111751705356,
+          280.0047031195341,
+          281.68236488106504
+        ],
+        "verified_200_values": [
+          317.5508609352644,
+          279.4111757594052,
+          280.0047024179184,
+          281.682366339366
+        ],
+        "exact_match": true
+      },
+      "Active_Params_%": {
+        "max_abs_diff": 0.0,
+        "original_values": [
+          100.0,
+          100.0,
+          35.74120603015075,
+          24.49748743718593
+        ],
+        "verified_200_values": [
+          100.0,
+          100.0,
+          35.74120603015075,
+          24.49748743718593
+        ],
+        "exact_match": true
+      },
+      "Joules_per_Token": {
+        "max_abs_diff": 0.0,
+        "original_values": [
+          0.000262144,
+          0.000262144,
+          9.36934271356784e-05,
+          6.421869346733668e-05
+        ],
+        "verified_200_values": [
+          0.000262144,
+          0.000262144,
+          9.36934271356784e-05,
+          6.421869346733668e-05
+        ],
+        "exact_match": true
+      },
+      "Accuracy_%": {
+        "max_abs_diff": 0.0,
+        "original_values": [
+          0.0,
+          22.61306532663317,
+          21.105527638190956,
+          20.100502512562816
+        ],
+        "verified_200_values": [
+          0.0,
+          22.61306532663317,
+          21.105527638190956,
+          20.100502512562816
+        ],
+        "exact_match": true
+      },
+      "BLEU1": {
+        "max_abs_diff": 0.0,
+        "original_values": [
+          0.542713567839196,
+          1.0,
+          0.9949748743718592,
+          0.9949748743718592
+        ],
+        "verified_200_values": [
+          0.542713567839196,
+          1.0,
+          0.9949748743718592,
+          0.9949748743718592
+        ],
+        "exact_match": true
+      },
+      "CharF1": {
+        "max_abs_diff": 0.0,
+        "original_values": [
+          0.9660297239915074,
+          1.0752792617775622,
+          1.081888246628131,
+          1.0734078755469127
+        ],
+        "verified_200_values": [
+          0.9660297239915074,
+          1.0752792617775622,
+          1.081888246628131,
+          1.0734078755469127
+        ],
+        "exact_match": true
+      }
+    },
+    "baseline_comparison_200_samples": {
+      "original": [
+        {
+          "Model": "Random Baseline",
+          "Mean_PPL": 311.0,
+          "Accuracy_%": 0.0
+        },
+        {
+          "Model": "Unigram Baseline",
+          "Mean_PPL": 20.0,
+          "Accuracy_%": 5.025125628140704
+        },
+        {
+          "Model": "Proposed Unconstrained",
+          "Mean_PPL": 273.57230664098284,
+          "Accuracy_%": 21.10552763819096
+        },
+        {
+          "Model": "Compute-Optimal (RQ3)",
+          "Mean_PPL": 275.0600529515763,
+          "Accuracy_%": 20.100502512562816
+        }
+      ],
+      "verified_200": [
+        {
+          "Model": "Random Baseline",
+          "Mean_PPL": 311.0,
+          "Accuracy_%": 0.0
+        },
+        {
+          "Model": "Unigram Baseline",
+          "Mean_PPL": 20.0,
+          "Accuracy_%": 5.025125628140704
+        },
+        {
+          "Model": "Proposed Unconstrained",
+          "Mean_PPL": 273.5723057591935,
+          "Accuracy_%": 21.10552763819096
+        },
+        {
+          "Model": "Compute-Optimal (RQ3)",
+          "Mean_PPL": 275.0600541656341,
+          "Accuracy_%": 20.100502512562816
+        }
+      ],
+      "max_ppl_diff": 1.2140577609898173e-06,
+      "max_acc_diff": 0.0
+    },
+    "budget_ablation": {
+      "original_rows": 6,
+      "original": [
+        {
+          "Budget_Joules": 0.001,
+          "Perplexity": 250.46987646328424,
+          "Accuracy": 0.1202404809619238,
+          "BLEU1": 1.0,
+          "CharF1": 0.9478568272205038,
+          "Active_Ratio": 0.1976452905811623,
+          "Joules_per_Token": 5.181152705410822e-05,
+          "Avg_TTT_Steps": 0.002004008016032
+        },
+        {
+          "Budget_Joules": 0.002,
+          "Perplexity": 250.50766693852947,
+          "Accuracy": 0.1202404809619238,
+          "BLEU1": 1.0,
+          "CharF1": 0.9478568272205038,
+          "Active_Ratio": 0.1996492985971943,
+          "Joules_per_Token": 5.2336865731462926e-05,
+          "Avg_TTT_Steps": 0.002004008016032
+        },
+        {
+          "Budget_Joules": 0.005,
+          "Perplexity": 250.5996284128908,
+          "Accuracy": 0.1222444889779559,
+          "BLEU1": 1.0,
+          "CharF1": 0.9476243093922652,
+          "Active_Ratio": 0.2061623246492986,
+          "Joules_per_Token": 5.4044216432865736e-05,
+          "Avg_TTT_Steps": 0.0060120240480961
+        },
+        {
+          "Budget_Joules": 0.01,
+          "Perplexity": 250.5759354122655,
+          "Accuracy": 0.1242484969939879,
+          "BLEU1": 1.0,
+          "CharF1": 0.9476243093922652,
+          "Active_Ratio": 0.2156813627254509,
+          "Joules_per_Token": 5.653957515030061e-05,
+          "Avg_TTT_Steps": 0.0120240480961923
+        },
+        {
+          "Budget_Joules": 0.05,
+          "Perplexity": 248.67849038526387,
+          "Accuracy": 0.1382765531062124,
+          "BLEU1": 1.0,
+          "CharF1": 0.9480892423238348,
+          "Active_Ratio": 0.2998496993987976,
+          "Joules_per_Token": 7.86037995991984e-05,
+          "Avg_TTT_Steps": 0.0581162324649298
+        },
+        {
+          "Budget_Joules": 0.1,
+          "Perplexity": 247.3214672008354,
+          "Accuracy": 0.1382765531062124,
+          "BLEU1": 1.0,
+          "CharF1": 0.9457604604826212,
+          "Active_Ratio": 0.3512024048096192,
+          "Joules_per_Token": 9.206560320641285e-05,
+          "Avg_TTT_Steps": 0.1062124248496994
+        }
+      ],
+      "run_200_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Budget_Joules": 0.0,
+          "Perplexity": 30.406482775486666,
+          "Accuracy": 0.06368515926325011,
+          "BLEU1": 0.09045226130653261,
+          "CharF1": 0.07380699574806904,
+          "Active_Ratio": 0.03746185839014715,
+          "Joules_per_Token": 9.820401405826734e-06,
+          "Avg_TTT_Steps": 0.10268778763557268
+        },
+        "exact_match_with_original": false,
+        "records": [
+          {
+            "Budget_Joules": 0.001,
+            "Perplexity": 279.65895498457866,
+            "Accuracy": 0.1809045226130653,
+            "BLEU1": 0.9095477386934674,
+            "CharF1": 1.008849557522124,
+            "Active_Ratio": 0.1953517587939698,
+            "Joules_per_Token": 5.121029145728643e-05,
+            "Avg_TTT_Steps": 0.0
+          },
+          {
+            "Budget_Joules": 0.002,
+            "Perplexity": 279.66016491453854,
+            "Accuracy": 0.1758793969849246,
+            "BLEU1": 0.9095477386934674,
+            "CharF1": 1.0093652445369408,
+            "Active_Ratio": 0.2047738693467336,
+            "Joules_per_Token": 5.368024120603015e-05,
+            "Avg_TTT_Steps": 0.0
+          },
+          {
+            "Budget_Joules": 0.005,
+            "Perplexity": 279.4635665356813,
+            "Accuracy": 0.185929648241206,
+            "BLEU1": 0.9095477386934674,
+            "CharF1": 1.0072916666666667,
+            "Active_Ratio": 0.2198492462311558,
+            "Joules_per_Token": 5.76321608040201e-05,
+            "Avg_TTT_Steps": 0.0100502512562814
+          },
+          {
+            "Budget_Joules": 0.01,
+            "Perplexity": 279.1150773781628,
+            "Accuracy": 0.185929648241206,
+            "BLEU1": 0.914572864321608,
+            "CharF1": 1.0052192066805847,
+            "Active_Ratio": 0.2449748743718593,
+            "Joules_per_Token": 6.421869346733668e-05,
+            "Avg_TTT_Steps": 0.0251256281407035
+          },
+          {
+            "Budget_Joules": 0.05,
+            "Perplexity": 278.00260469062846,
+            "Accuracy": 0.1909547738693467,
+            "BLEU1": 0.9346733668341708,
+            "CharF1": 1.0180505415162455,
+            "Active_Ratio": 0.3373115577889447,
+            "Joules_per_Token": 8.842420100502513e-05,
+            "Avg_TTT_Steps": 0.1608040201005025
+          },
+          {
+            "Budget_Joules": 0.1,
+            "Perplexity": 277.72794997632207,
+            "Accuracy": 0.1909547738693467,
+            "BLEU1": 0.9447236180904522,
+            "CharF1": 1.0195674562306902,
+            "Active_Ratio": 0.3574120603015075,
+            "Joules_per_Token": 9.36934271356784e-05,
+            "Avg_TTT_Steps": 0.2010050251256281
+          }
+        ]
+      },
+      "run_500_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Budget_Joules": 0.0,
+          "Perplexity": 8.523583659325595e-06,
+          "Accuracy": 0.0,
+          "BLEU1": 0.0,
+          "CharF1": 0.0,
+          "Active_Ratio": 0.0,
+          "Joules_per_Token": 0.0,
+          "Avg_TTT_Steps": 0.0
+        },
+        "exact_match_with_original": true,
+        "records": [
+          {
+            "Budget_Joules": 0.001,
+            "Perplexity": 250.4698746514941,
+            "Accuracy": 0.1202404809619238,
+            "BLEU1": 1.0,
+            "CharF1": 0.9478568272205038,
+            "Active_Ratio": 0.1976452905811623,
+            "Joules_per_Token": 5.181152705410822e-05,
+            "Avg_TTT_Steps": 0.002004008016032
+          },
+          {
+            "Budget_Joules": 0.002,
+            "Perplexity": 250.50766512196145,
+            "Accuracy": 0.1202404809619238,
+            "BLEU1": 1.0,
+            "CharF1": 0.9478568272205038,
+            "Active_Ratio": 0.1996492985971943,
+            "Joules_per_Token": 5.2336865731462926e-05,
+            "Avg_TTT_Steps": 0.002004008016032
+          },
+          {
+            "Budget_Joules": 0.005,
+            "Perplexity": 250.5996303876082,
+            "Accuracy": 0.1222444889779559,
+            "BLEU1": 1.0,
+            "CharF1": 0.9476243093922652,
+            "Active_Ratio": 0.2061623246492986,
+            "Joules_per_Token": 5.4044216432865736e-05,
+            "Avg_TTT_Steps": 0.0060120240480961
+          },
+          {
+            "Budget_Joules": 0.01,
+            "Perplexity": 250.57592688868183,
+            "Accuracy": 0.1242484969939879,
+            "BLEU1": 1.0,
+            "CharF1": 0.9476243093922652,
+            "Active_Ratio": 0.2156813627254509,
+            "Joules_per_Token": 5.653957515030061e-05,
+            "Avg_TTT_Steps": 0.0120240480961923
+          },
+          {
+            "Budget_Joules": 0.05,
+            "Perplexity": 248.67849715845375,
+            "Accuracy": 0.1382765531062124,
+            "BLEU1": 1.0,
+            "CharF1": 0.9480892423238348,
+            "Active_Ratio": 0.2998496993987976,
+            "Joules_per_Token": 7.86037995991984e-05,
+            "Avg_TTT_Steps": 0.0581162324649298
+          },
+          {
+            "Budget_Joules": 0.1,
+            "Perplexity": 247.3214705728577,
+            "Accuracy": 0.1382765531062124,
+            "BLEU1": 1.0,
+            "CharF1": 0.9457604604826212,
+            "Active_Ratio": 0.3512024048096192,
+            "Joules_per_Token": 9.206560320641285e-05,
+            "Avg_TTT_Steps": 0.1062124248496994
+          }
+        ]
+      }
+    },
+    "rq1_grid": {
+      "original_rows": 36,
+      "original": [
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.3,
+          "TTT_Steps": 0,
+          "Perplexity": 320.7410496958272,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.2468200400801605e-05,
+          "Efficiency_AccPerJoule": 152.77886420525655
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.3,
+          "TTT_Steps": 1,
+          "Perplexity": 320.7410496958272,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.2468200400801605e-05,
+          "Efficiency_AccPerJoule": 152.77886420525655
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.3,
+          "TTT_Steps": 2,
+          "Perplexity": 320.7930009799873,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.181152705410822e-05,
+          "Efficiency_AccPerJoule": 154.71522496831432
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.5,
+          "TTT_Steps": 0,
+          "Perplexity": 320.7278916964789,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.200852905811624e-05,
+          "Efficiency_AccPerJoule": 154.12918244949492
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.5,
+          "TTT_Steps": 1,
+          "Perplexity": 320.7980308762056,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.181152705410822e-05,
+          "Efficiency_AccPerJoule": 154.71522496831432
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.5,
+          "TTT_Steps": 2,
+          "Perplexity": 320.75717340442606,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.16145250501002e-05,
+          "Efficiency_AccPerJoule": 155.30574109414755
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.7,
+          "TTT_Steps": 0,
+          "Perplexity": 320.7317229674192,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.187719438877756e-05,
+          "Efficiency_AccPerJoule": 154.51938291139237
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.7,
+          "TTT_Steps": 1,
+          "Perplexity": 320.80186214714587,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.168019238476954e-05,
+          "Efficiency_AccPerJoule": 155.10840216010163
+        },
+        {
+          "Budget_J": 0.001,
+          "Beta": 0.7,
+          "TTT_Steps": 2,
+          "Perplexity": 320.80674410344125,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.16145250501002e-05,
+          "Efficiency_AccPerJoule": 155.30574109414755
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.3,
+          "TTT_Steps": 0,
+          "Perplexity": 320.793248392537,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.660524248496994e-05,
+          "Efficiency_AccPerJoule": 141.6128915313225
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.3,
+          "TTT_Steps": 1,
+          "Perplexity": 320.79757188938424,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.5291895791583167e-05,
+          "Efficiency_AccPerJoule": 144.97661817102136
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.3,
+          "TTT_Steps": 2,
+          "Perplexity": 320.7738151473846,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.299353907815631e-05,
+          "Efficiency_AccPerJoule": 151.26432775712513
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.5,
+          "TTT_Steps": 0,
+          "Perplexity": 320.83536506606964,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.516056112224449e-05,
+          "Efficiency_AccPerJoule": 145.32180059523807
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.5,
+          "TTT_Steps": 1,
+          "Perplexity": 320.99755957226955,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.4044216432865736e-05,
+          "Efficiency_AccPerJoule": 148.32358748481164
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.5,
+          "TTT_Steps": 2,
+          "Perplexity": 320.755389135204,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.240253306613227e-05,
+          "Efficiency_AccPerJoule": 152.97031641604008
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.7,
+          "TTT_Steps": 0,
+          "Perplexity": 320.8734959543109,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.39785490981964e-05,
+          "Efficiency_AccPerJoule": 148.50402980535276
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.7,
+          "TTT_Steps": 1,
+          "Perplexity": 320.7316287237561,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.325620841683367e-05,
+          "Efficiency_AccPerJoule": 150.51826448828604
+        },
+        {
+          "Budget_J": 0.005,
+          "Beta": 0.7,
+          "TTT_Steps": 2,
+          "Perplexity": 320.8359271643874,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.213986372745491e-05,
+          "Efficiency_AccPerJoule": 153.74094773299743
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.3,
+          "TTT_Steps": 0,
+          "Perplexity": 320.3192222151823,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 6.185862925851704e-05,
+          "Efficiency_AccPerJoule": 129.5863190021231
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.3,
+          "TTT_Steps": 1,
+          "Perplexity": 320.4684779715681,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.9100601202404815e-05,
+          "Efficiency_AccPerJoule": 135.63368055555554
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.3,
+          "TTT_Steps": 2,
+          "Perplexity": 320.89640985462137,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.456955511022045e-05,
+          "Efficiency_AccPerJoule": 146.895682912154
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.5,
+          "TTT_Steps": 0,
+          "Perplexity": 320.0455771161464,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.857526252505011e-05,
+          "Efficiency_AccPerJoule": 136.85012612107622
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.5,
+          "TTT_Steps": 1,
+          "Perplexity": 320.793471372677,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.653957515030061e-05,
+          "Efficiency_AccPerJoule": 141.77736643437862
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.5,
+          "TTT_Steps": 2,
+          "Perplexity": 320.9664655543998,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.345321042084169e-05,
+          "Efficiency_AccPerJoule": 149.96352886977883
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.7,
+          "TTT_Steps": 0,
+          "Perplexity": 320.5442416204479,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.634257314629259e-05,
+          "Efficiency_AccPerJoule": 142.27309149184146
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.7,
+          "TTT_Steps": 1,
+          "Perplexity": 320.77083032642435,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.450388777555111e-05,
+          "Efficiency_AccPerJoule": 147.07266566265056
+        },
+        {
+          "Budget_J": 0.01,
+          "Beta": 0.7,
+          "TTT_Steps": 2,
+          "Perplexity": 320.7777300817455,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 5.2862204408817634e-05,
+          "Efficiency_AccPerJoule": 151.6401397515528
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.3,
+          "TTT_Steps": 0,
+          "Perplexity": 317.6272166525434,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 0.0001035573867735,
+          "Efficiency_AccPerJoule": 77.40666613823714
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.3,
+          "TTT_Steps": 1,
+          "Perplexity": 317.5713807375493,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 9.114626052104207e-05,
+          "Efficiency_AccPerJoule": 87.94691102305474
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.3,
+          "TTT_Steps": 2,
+          "Perplexity": 319.5461390615704,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 6.593000400801603e-05,
+          "Efficiency_AccPerJoule": 121.58397659362548
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.5,
+          "TTT_Steps": 0,
+          "Perplexity": 317.1293337101449,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 9.068658917835672e-05,
+          "Efficiency_AccPerJoule": 88.39269551049962
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.5,
+          "TTT_Steps": 1,
+          "Perplexity": 318.44912487328173,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 7.86037995991984e-05,
+          "Efficiency_AccPerJoule": 101.98021094402672
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.5,
+          "TTT_Steps": 2,
+          "Perplexity": 319.78302628817204,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 6.159595991983968e-05,
+          "Efficiency_AccPerJoule": 130.13892590618337
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.7,
+          "TTT_Steps": 0,
+          "Perplexity": 318.91559302687403,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 7.788145891783568e-05,
+          "Efficiency_AccPerJoule": 102.92606450252948
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.7,
+          "TTT_Steps": 1,
+          "Perplexity": 319.3076570010137,
+          "Accuracy": 0.0080160320641282,
+          "Joules": 7.118339078156313e-05,
+          "Efficiency_AccPerJoule": 112.6109893911439
+        },
+        {
+          "Budget_J": 0.05,
+          "Beta": 0.7,
+          "TTT_Steps": 2,
+          "Perplexity": 320.5299815634687,
+          "Accuracy": 0.0100200400801603,
+          "Joules": 5.844392785571143e-05,
+          "Efficiency_AccPerJoule": 171.4470681179775
+        }
+      ],
+      "run_200_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Budget_J": 0.0,
+          "Beta": 0.0,
+          "TTT_Steps": 0.0,
+          "Perplexity": 6.187618175749378,
+          "Accuracy": 0.0100200400801603,
+          "Joules": 2.675267415225792e-05,
+          "Efficiency_AccPerJoule": 171.4470681179775
+        },
+        "exact_match_with_original": false,
+        "records": [
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 325.5579301076918,
+            "Accuracy": 0.0,
+            "Joules": 5.236293467336684e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 325.5579301076918,
+            "Accuracy": 0.0,
+            "Joules": 5.236293467336684e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 326.25765186098954,
+            "Accuracy": 0.0,
+            "Joules": 5.038697487437186e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 325.9422218667802,
+            "Accuracy": 0.0,
+            "Joules": 5.121029145728643e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 325.9422218667802,
+            "Accuracy": 0.0,
+            "Joules": 5.121029145728643e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 326.3100411113183,
+            "Accuracy": 0.0,
+            "Joules": 5.005764824120603e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 326.45253772831444,
+            "Accuracy": 0.0,
+            "Joules": 5.08809648241206e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 326.45253772831444,
+            "Accuracy": 0.0,
+            "Joules": 5.08809648241206e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 326.8040181835692,
+            "Accuracy": 0.0,
+            "Joules": 4.989298492462312e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 324.6365742132292,
+            "Accuracy": 0.0,
+            "Joules": 6.323071356783919e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 324.879675630349,
+            "Accuracy": 0.0,
+            "Joules": 6.174874371859297e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 325.26351852033605,
+            "Accuracy": 0.0,
+            "Joules": 5.41742311557789e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 325.0531221322678,
+            "Accuracy": 0.0,
+            "Joules": 5.944345728643216e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 325.3791158091483,
+            "Accuracy": 0.0,
+            "Joules": 5.76321608040201e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 325.7143060885482,
+            "Accuracy": 0.0,
+            "Joules": 5.318625125628141e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 326.0150582778394,
+            "Accuracy": 0.0,
+            "Joules": 5.6808844221105534e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 326.0139656258588,
+            "Accuracy": 0.0,
+            "Joules": 5.466822110552764e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 326.3512642251786,
+            "Accuracy": 0.0,
+            "Joules": 5.170428140703518e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 323.60027761794817,
+            "Accuracy": 0.0,
+            "Joules": 7.656844221105528e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 323.5124365265046,
+            "Accuracy": 0.0,
+            "Joules": 7.031123618090453e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 325.30205509051603,
+            "Accuracy": 0.0,
+            "Joules": 5.845547738693468e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 323.9474608454872,
+            "Accuracy": 0.0,
+            "Joules": 6.915859296482412e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 324.8914955944272,
+            "Accuracy": 0.0,
+            "Joules": 6.421869346733668e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 325.5135950443134,
+            "Accuracy": 0.0,
+            "Joules": 5.598552763819096e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 325.1107892367109,
+            "Accuracy": 0.0,
+            "Joules": 6.405403015075377e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 325.8843099316161,
+            "Accuracy": 0.0,
+            "Joules": 5.911413065326633e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 326.1985759639261,
+            "Accuracy": 0.0,
+            "Joules": 5.4009567839195983e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 320.3293957734228,
+            "Accuracy": 0.0,
+            "Joules": 0.0001284373869346,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 320.98184349788494,
+            "Accuracy": 0.0,
+            "Joules": 0.0001178989346733,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 323.3052045352495,
+            "Accuracy": 0.0,
+            "Joules": 8.908285427135679e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 323.3169518858943,
+            "Accuracy": 0.0,
+            "Joules": 9.36934271356784e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 323.6031188964844,
+            "Accuracy": 0.0,
+            "Joules": 8.842420100502513e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 323.8177340713578,
+            "Accuracy": 0.0,
+            "Joules": 7.80504120603015e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 324.89525255366186,
+            "Accuracy": 0.0,
+            "Joules": 7.689776884422111e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 325.2168227152609,
+            "Accuracy": 0.0,
+            "Joules": 7.492180904522613e-05,
+            "Efficiency_AccPerJoule": 0.0
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 325.29617409250847,
+            "Accuracy": 0.0,
+            "Joules": 6.915859296482412e-05,
+            "Efficiency_AccPerJoule": 0.0
+          }
+        ]
+      },
+      "run_500_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Budget_J": 0.0,
+          "Beta": 0.0,
+          "TTT_Steps": 0.0,
+          "Perplexity": 6.666164381385897e-06,
+          "Accuracy": 0.0,
+          "Joules": 0.0,
+          "Efficiency_AccPerJoule": 0.0
+        },
+        "exact_match_with_original": true,
+        "records": [
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 320.74105538347203,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.2468200400801605e-05,
+            "Efficiency_AccPerJoule": 152.77886420525655
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 320.74105538347203,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.2468200400801605e-05,
+            "Efficiency_AccPerJoule": 152.77886420525655
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 320.793003212235,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.181152705410822e-05,
+            "Efficiency_AccPerJoule": 154.71522496831432
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 320.72789707833635,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.200852905811624e-05,
+            "Efficiency_AccPerJoule": 154.12918244949492
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 320.79803139604405,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.181152705410822e-05,
+            "Efficiency_AccPerJoule": 154.71522496831432
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 320.757175025099,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.16145250501002e-05,
+            "Efficiency_AccPerJoule": 155.30574109414755
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 320.7317283492767,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.187719438877756e-05,
+            "Efficiency_AccPerJoule": 154.51938291139237
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 320.80186266698433,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.168019238476954e-05,
+            "Efficiency_AccPerJoule": 155.10840216010163
+          },
+          {
+            "Budget_J": 0.001,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 320.806746213374,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.16145250501002e-05,
+            "Efficiency_AccPerJoule": 155.30574109414755
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 320.7932533462922,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.660524248496994e-05,
+            "Efficiency_AccPerJoule": 141.6128915313225
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 320.7975770571905,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.5291895791583167e-05,
+            "Efficiency_AccPerJoule": 144.97661817102136
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 320.7738111109915,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.299353907815631e-05,
+            "Efficiency_AccPerJoule": 151.26432775712513
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 320.8353694694076,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.516056112224449e-05,
+            "Efficiency_AccPerJoule": 145.32180059523807
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 320.9975603978954,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.4044216432865736e-05,
+            "Efficiency_AccPerJoule": 148.32358748481164
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 320.7553875756885,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.240253306613227e-05,
+            "Efficiency_AccPerJoule": 152.97031641604008
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 320.8735013973259,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.39785490981964e-05,
+            "Efficiency_AccPerJoule": 148.50402980535276
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 320.73163040558654,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.325620841683367e-05,
+            "Efficiency_AccPerJoule": 150.51826448828604
+          },
+          {
+            "Budget_J": 0.005,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 320.83593068094194,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.213986372745491e-05,
+            "Efficiency_AccPerJoule": 153.74094773299743
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 320.31922655736275,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 6.185862925851704e-05,
+            "Efficiency_AccPerJoule": 129.5863190021231
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 320.46847283434056,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.9100601202404815e-05,
+            "Efficiency_AccPerJoule": 135.63368055555554
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 320.89641211744777,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.456955511022045e-05,
+            "Efficiency_AccPerJoule": 146.895682912154
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 320.0455820699015,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.857526252505011e-05,
+            "Efficiency_AccPerJoule": 136.85012612107622
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 320.7934698131615,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.653957515030061e-05,
+            "Efficiency_AccPerJoule": 141.77736643437862
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 320.96646274115614,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.345321042084169e-05,
+            "Efficiency_AccPerJoule": 149.96352886977883
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 320.5442465742031,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.634257314629259e-05,
+            "Efficiency_AccPerJoule": 142.27309149184146
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 320.77083099915654,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.450388777555111e-05,
+            "Efficiency_AccPerJoule": 147.07266566265056
+          },
+          {
+            "Budget_J": 0.01,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 320.7777367479099,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 5.2862204408817634e-05,
+            "Efficiency_AccPerJoule": 151.6401397515528
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.3,
+            "TTT_Steps": 0,
+            "Perplexity": 317.62721594923244,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 0.0001035573867735,
+            "Efficiency_AccPerJoule": 77.40666613823714
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Perplexity": 317.57138248053724,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 9.114626052104207e-05,
+            "Efficiency_AccPerJoule": 87.94691102305474
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.3,
+            "TTT_Steps": 2,
+            "Perplexity": 319.5461406822434,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 6.593000400801603e-05,
+            "Efficiency_AccPerJoule": 121.58397659362548
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.5,
+            "TTT_Steps": 0,
+            "Perplexity": 317.12933416882595,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 9.068658917835672e-05,
+            "Efficiency_AccPerJoule": 88.39269551049962
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Perplexity": 318.44912187656564,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 7.86037995991984e-05,
+            "Efficiency_AccPerJoule": 101.98021094402672
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.5,
+            "TTT_Steps": 2,
+            "Perplexity": 319.7830243617117,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 6.159595991983968e-05,
+            "Efficiency_AccPerJoule": 130.13892590618337
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.7,
+            "TTT_Steps": 0,
+            "Perplexity": 318.9155937913425,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 7.788145891783568e-05,
+            "Efficiency_AccPerJoule": 102.92606450252948
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Perplexity": 319.3076504571644,
+            "Accuracy": 0.0080160320641282,
+            "Joules": 7.118339078156313e-05,
+            "Efficiency_AccPerJoule": 112.6109893911439
+          },
+          {
+            "Budget_J": 0.05,
+            "Beta": 0.7,
+            "TTT_Steps": 2,
+            "Perplexity": 320.5299771295521,
+            "Accuracy": 0.0100200400801603,
+            "Joules": 5.844392785571143e-05,
+            "Efficiency_AccPerJoule": 171.4470681179775
+          }
+        ]
+      }
+    },
+    "rq2_threshold_sweep": {
+      "original_rows": 9,
+      "original": [
+        {
+          "Threshold": 5,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 10,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 15,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 20,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 30,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 50,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 100,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 200,
+          "TTT_Count": 499,
+          "Std_Count": 0,
+          "TTT_Rate_%": 100.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 315.07
+        },
+        {
+          "Threshold": 500,
+          "TTT_Count": 0,
+          "Std_Count": 499,
+          "TTT_Rate_%": 0.0,
+          "Std_Mean_PPL": 315.07,
+          "TTT_Mean_PPL": 0.0
+        }
+      ],
+      "run_200_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Threshold": 0.0,
+          "TTT_Count": 300.0,
+          "Std_Count": 300.0,
+          "TTT_Rate_%": 0.0,
+          "Std_Mean_PPL": 4.400000000000034,
+          "TTT_Mean_PPL": 4.400000000000034
+        },
+        "exact_match_with_original": false,
+        "records": [
+          {
+            "Threshold": 5,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 10,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 15,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 20,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 30,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 50,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 100,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 200,
+            "TTT_Count": 199,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 319.47
+          },
+          {
+            "Threshold": 500,
+            "TTT_Count": 0,
+            "Std_Count": 199,
+            "TTT_Rate_%": 0.0,
+            "Std_Mean_PPL": 319.47,
+            "TTT_Mean_PPL": 0.0
+          }
+        ]
+      },
+      "run_500_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Threshold": 0.0,
+          "TTT_Count": 0.0,
+          "Std_Count": 0.0,
+          "TTT_Rate_%": 0.0,
+          "Std_Mean_PPL": 0.0,
+          "TTT_Mean_PPL": 0.0
+        },
+        "exact_match_with_original": true,
+        "records": [
+          {
+            "Threshold": 5,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 10,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 15,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 20,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 30,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 50,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 100,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 200,
+            "TTT_Count": 499,
+            "Std_Count": 0,
+            "TTT_Rate_%": 100.0,
+            "Std_Mean_PPL": 0.0,
+            "TTT_Mean_PPL": 315.07
+          },
+          {
+            "Threshold": 500,
+            "TTT_Count": 0,
+            "Std_Count": 499,
+            "TTT_Rate_%": 0.0,
+            "Std_Mean_PPL": 315.07,
+            "TTT_Mean_PPL": 0.0
+          }
+        ]
+      }
+    },
+    "rq3_peft_comparison": {
+      "original_rows": 4,
+      "original": [
+        {
+          "PEFT_Type": "none",
+          "Perplexity": 321.21,
+          "Accuracy_%": 0.0,
+          "BLEU1": 0.523,
+          "CharF1": 0.9571,
+          "Joules_per_Token": 5.653957515030061e-05,
+          "Active_Ratio_%": 21.57,
+          "CIA": 0.0181610314335765
+        },
+        {
+          "PEFT_Type": "lora",
+          "Perplexity": 321.15,
+          "Accuracy_%": 0.8,
+          "BLEU1": 0.7234,
+          "CharF1": 1.0338,
+          "Joules_per_Token": 5.653957515030061e-05,
+          "Active_Ratio_%": 21.57,
+          "CIA": 0.0181578130215862
+        },
+        {
+          "PEFT_Type": "rslora",
+          "Perplexity": 319.08,
+          "Accuracy_%": 0.0,
+          "BLEU1": 0.5872,
+          "CharF1": 0.9739,
+          "Joules_per_Token": 5.653957515030061e-05,
+          "Active_Ratio_%": 21.57,
+          "CIA": 0.0180404611240778
+        },
+        {
+          "PEFT_Type": "dora",
+          "Perplexity": 319.8,
+          "Accuracy_%": 0.6,
+          "BLEU1": 0.6012,
+          "CharF1": 0.9327,
+          "Joules_per_Token": 5.653957515030061e-05,
+          "Active_Ratio_%": 21.57,
+          "CIA": 0.0180813201869791
+        }
+      ],
+      "run_200_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Perplexity": 10.919999999999959,
+          "Accuracy_%": 0.6,
+          "BLEU1": 0.24100000000000005,
+          "CharF1": 0.06530000000000002,
+          "Joules_per_Token": 7.679118317036072e-06,
+          "Active_Ratio_%": 2.9299999999999997,
+          "CIA": 0.0028079269976879
+        },
+        "exact_match_with_original": false,
+        "records": [
+          {
+            "PEFT_Type": "none",
+            "Perplexity": 318.42,
+            "Accuracy_%": 0.5,
+            "BLEU1": 0.4925,
+            "CharF1": 0.9764,
+            "Joules_per_Token": 6.421869346733668e-05,
+            "Active_Ratio_%": 24.5,
+            "CIA": 0.0204482376250599
+          },
+          {
+            "PEFT_Type": "lora",
+            "Perplexity": 311.56,
+            "Accuracy_%": 0.5,
+            "BLEU1": 0.4824,
+            "CharF1": 0.9769,
+            "Joules_per_Token": 6.421869346733668e-05,
+            "Active_Ratio_%": 24.5,
+            "CIA": 0.0200080201886315
+          },
+          {
+            "PEFT_Type": "rslora",
+            "Perplexity": 308.16,
+            "Accuracy_%": 0.0,
+            "BLEU1": 0.5327,
+            "CharF1": 0.9086,
+            "Joules_per_Token": 6.421869346733668e-05,
+            "Active_Ratio_%": 24.5,
+            "CIA": 0.0197893851260069
+          },
+          {
+            "PEFT_Type": "dora",
+            "Perplexity": 325.28,
+            "Accuracy_%": 0.0,
+            "BLEU1": 0.5176,
+            "CharF1": 0.9272,
+            "Joules_per_Token": 6.421869346733668e-05,
+            "Active_Ratio_%": 24.5,
+            "CIA": 0.020889247184667
+          }
+        ]
+      },
+      "run_500_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Perplexity": 0.0,
+          "Accuracy_%": 0.0,
+          "BLEU1": 0.0,
+          "CharF1": 0.0,
+          "Joules_per_Token": 0.0,
+          "Active_Ratio_%": 0.0,
+          "CIA": 2.662518990004248e-10
+        },
+        "exact_match_with_original": true,
+        "records": [
+          {
+            "PEFT_Type": "none",
+            "Perplexity": 321.21,
+            "Accuracy_%": 0.0,
+            "BLEU1": 0.523,
+            "CharF1": 0.9571,
+            "Joules_per_Token": 5.653957515030061e-05,
+            "Active_Ratio_%": 21.57,
+            "CIA": 0.0181610311673246
+          },
+          {
+            "PEFT_Type": "lora",
+            "Perplexity": 321.15,
+            "Accuracy_%": 0.8,
+            "BLEU1": 0.7234,
+            "CharF1": 1.0338,
+            "Joules_per_Token": 5.653957515030061e-05,
+            "Active_Ratio_%": 21.57,
+            "CIA": 0.0181578129351408
+          },
+          {
+            "PEFT_Type": "rslora",
+            "Perplexity": 319.08,
+            "Accuracy_%": 0.0,
+            "BLEU1": 0.5872,
+            "CharF1": 0.9739,
+            "Joules_per_Token": 5.653957515030061e-05,
+            "Active_Ratio_%": 21.57,
+            "CIA": 0.0180404610704816
+          },
+          {
+            "PEFT_Type": "dora",
+            "Perplexity": 319.8,
+            "Accuracy_%": 0.6,
+            "BLEU1": 0.6012,
+            "CharF1": 0.9327,
+            "Joules_per_Token": 5.653957515030061e-05,
+            "Active_Ratio_%": 21.57,
+            "CIA": 0.0180813200590399
+          }
+        ]
+      }
+    },
+    "grid_search_results": {
+      "original_rows": 12,
+      "original": [
+        {
+          "Beta": 0.3,
+          "TTT_Steps": 1,
+          "Best_of_N": 1,
+          "Perplexity": 260.7790865657305,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 0.0001251141818181
+        },
+        {
+          "Beta": 0.3,
+          "TTT_Steps": 1,
+          "Best_of_N": 5,
+          "Perplexity": 260.7790865657305,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 0.0001251141818181
+        },
+        {
+          "Beta": 0.3,
+          "TTT_Steps": 3,
+          "Best_of_N": 1,
+          "Perplexity": 260.7765418929283,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 0.0001251141818181
+        },
+        {
+          "Beta": 0.3,
+          "TTT_Steps": 3,
+          "Best_of_N": 5,
+          "Perplexity": 260.7765418929283,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 0.0001251141818181
+        },
+        {
+          "Beta": 0.5,
+          "TTT_Steps": 1,
+          "Best_of_N": 1,
+          "Perplexity": 260.98383369831123,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 9.267717171717173e-05
+        },
+        {
+          "Beta": 0.5,
+          "TTT_Steps": 1,
+          "Best_of_N": 5,
+          "Perplexity": 260.98383369831123,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 9.267717171717173e-05
+        },
+        {
+          "Beta": 0.5,
+          "TTT_Steps": 3,
+          "Best_of_N": 1,
+          "Perplexity": 260.9803695678711,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 9.267717171717173e-05
+        },
+        {
+          "Beta": 0.5,
+          "TTT_Steps": 3,
+          "Best_of_N": 5,
+          "Perplexity": 260.9803695678711,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 9.267717171717173e-05
+        },
+        {
+          "Beta": 0.7,
+          "TTT_Steps": 1,
+          "Best_of_N": 1,
+          "Perplexity": 262.90577535918266,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 7.248678787878788e-05
+        },
+        {
+          "Beta": 0.7,
+          "TTT_Steps": 1,
+          "Best_of_N": 5,
+          "Perplexity": 262.90577535918266,
+          "Accuracy": 0.1616161616161616,
+          "Joules": 7.248678787878788e-05
+        },
+        {
+          "Beta": 0.7,
+          "TTT_Steps": 3,
+          "Best_of_N": 1,
+          "Perplexity": 262.9034188010476,
+          "Accuracy": 0.1818181818181818,
+          "Joules": 7.248678787878788e-05
+        },
+        {
+          "Beta": 0.7,
+          "TTT_Steps": 3,
+          "Best_of_N": 5,
+          "Perplexity": 262.9034188010476,
+          "Accuracy": 0.1616161616161616,
+          "Joules": 7.248678787878788e-05
+        }
+      ],
+      "run_200_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Beta": 0.0,
+          "TTT_Steps": 0.0,
+          "Best_of_N": 0.0,
+          "Perplexity": 16.696871578254786,
+          "Accuracy": 0.029338612253185098,
+          "Joules": 4.410980965433226e-06
+        },
+        "exact_match_with_original": false,
+        "records": [
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Best_of_N": 1,
+            "Perplexity": 275.1199209702075,
+            "Accuracy": 0.185929648241206,
+            "Joules": 0.0001292607035175
+          },
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Best_of_N": 5,
+            "Perplexity": 275.1199209702075,
+            "Accuracy": 0.1909547738693467,
+            "Joules": 0.0001292607035175
+          },
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 3,
+            "Best_of_N": 1,
+            "Perplexity": 274.9845040862884,
+            "Accuracy": 0.185929648241206,
+            "Joules": 0.0001292607035175
+          },
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 3,
+            "Best_of_N": 5,
+            "Perplexity": 274.9845040862884,
+            "Accuracy": 0.1909547738693467,
+            "Joules": 0.0001292607035175
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Best_of_N": 1,
+            "Perplexity": 277.680705276566,
+            "Accuracy": 0.185929648241206,
+            "Joules": 9.36934271356784e-05
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Best_of_N": 5,
+            "Perplexity": 277.680705276566,
+            "Accuracy": 0.1909547738693467,
+            "Joules": 9.36934271356784e-05
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 3,
+            "Best_of_N": 1,
+            "Perplexity": 277.56013036373275,
+            "Accuracy": 0.185929648241206,
+            "Joules": 9.36934271356784e-05
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 3,
+            "Best_of_N": 5,
+            "Perplexity": 277.56013036373275,
+            "Accuracy": 0.1909547738693467,
+            "Joules": 9.36934271356784e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Best_of_N": 1,
+            "Perplexity": 278.0097731393785,
+            "Accuracy": 0.185929648241206,
+            "Joules": 7.689776884422111e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Best_of_N": 5,
+            "Perplexity": 278.0097731393785,
+            "Accuracy": 0.1909547738693467,
+            "Joules": 7.689776884422111e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 3,
+            "Best_of_N": 1,
+            "Perplexity": 277.8950355568124,
+            "Accuracy": 0.185929648241206,
+            "Joules": 7.689776884422111e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 3,
+            "Best_of_N": 5,
+            "Perplexity": 277.8950355568124,
+            "Accuracy": 0.1909547738693467,
+            "Joules": 7.689776884422111e-05
+          }
+        ]
+      },
+      "run_100_samples": {
+        "max_numeric_diffs_vs_original": {
+          "Beta": 0.0,
+          "TTT_Steps": 0.0,
+          "Best_of_N": 0.0,
+          "Perplexity": 8.168846648004546e-06,
+          "Accuracy": 0.0,
+          "Joules": 0.0
+        },
+        "exact_match_with_original": true,
+        "records": [
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Best_of_N": 1,
+            "Perplexity": 260.77908733637645,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 0.0001251141818181
+          },
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 1,
+            "Best_of_N": 5,
+            "Perplexity": 260.77908733637645,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 0.0001251141818181
+          },
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 3,
+            "Best_of_N": 1,
+            "Perplexity": 260.7765409681532,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 0.0001251141818181
+          },
+          {
+            "Beta": 0.3,
+            "TTT_Steps": 3,
+            "Best_of_N": 5,
+            "Perplexity": 260.7765409681532,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 0.0001251141818181
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Best_of_N": 1,
+            "Perplexity": 260.9838287661774,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 9.267717171717173e-05
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 1,
+            "Best_of_N": 5,
+            "Perplexity": 260.9838287661774,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 9.267717171717173e-05
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 3,
+            "Best_of_N": 1,
+            "Perplexity": 260.98037773671774,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 9.267717171717173e-05
+          },
+          {
+            "Beta": 0.5,
+            "TTT_Steps": 3,
+            "Best_of_N": 5,
+            "Perplexity": 260.98037773671774,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 9.267717171717173e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Best_of_N": 1,
+            "Perplexity": 262.90577859589547,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 7.248678787878788e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 1,
+            "Best_of_N": 5,
+            "Perplexity": 262.90577859589547,
+            "Accuracy": 0.1616161616161616,
+            "Joules": 7.248678787878788e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 3,
+            "Best_of_N": 1,
+            "Perplexity": 262.90342095885615,
+            "Accuracy": 0.1818181818181818,
+            "Joules": 7.248678787878788e-05
+          },
+          {
+            "Beta": 0.7,
+            "TTT_Steps": 3,
+            "Best_of_N": 5,
+            "Perplexity": 262.90342095885615,
+            "Accuracy": 0.1616161616161616,
+            "Joules": 7.248678787878788e-05
+          }
+        ]
+      }
+    }
+  },
+  "discrepancy_investigation": []
+}

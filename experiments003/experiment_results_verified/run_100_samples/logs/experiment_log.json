@@ -1,0 +1,49 @@
+[
+  {
+    "timestamp": "2026-11-04T12:06:29.107931Z",
+    "tag": "START",
+    "args": {
+      "num_seeds": 1,
+      "num_experts": 8,
+      "hidden_dim": 64,
+      "vocab_size": 1000,
+      "beta": 0.5,
+      "ttt_lr": 0.001,
+      "ttt_steps": 1,
+      "num_samples": 100,
+      "lambda_tradeoff": 0.1,
+      "output_dir": "experiment_results_verified/run_100_samples",
+      "data_path": "experiment_results_verified/QAmdataset_head1000.json",
+      "use_simulated_data": false,
+      "peft_type": "rslora",
+      "best_of_n": 5,
+      "run_grid_search": true,
+      "global_budget_joules": 0.01,
+      "run_budget_ablation": false,
+      "run_rq1_ablation": false,
+      "run_rq2_ablation": false,
+      "run_rq3_ablation": false,
+      "init_project": false,
+      "generate_synthetic": false,
+      "git_commit": false,
+      "routing_threshold": 15.0,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2026-11-04T12:07:05.715466Z",
+    "tag": "BASELINES",
+    "random_ppl": 287.0,
+    "unigram_ppl": 19.999999999999996
+  },
+  {
+    "timestamp": "2026-11-04T12:07:06.223232Z",
+    "tag": "REPORT",
+    "path": "experiment_results_verified/run_100_samples\\full_experiment_report.json"
+  },
+  {
+    "timestamp": "2026-11-04T12:07:06.223949Z",
+    "tag": "END",
+    "status": "complete"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "experiment": "Sovereign Amharic LLM - Compute-Optimal Framework (RQ3)",
+  "timestamp": "2026-11-04T11:59:05.610205Z",
+  "python_platform": "Windows-11-10.0.26200-SP0",
+  "pytorch_version": "2.12.0+cpu",
+  "hardware": {
+    "cuda_available": false,
+    "device": "cpu",
+    "gpu_name": "CPU"
+  },
+  "hyperparameters": {
+    "num_experts": 8,
+    "hidden_dim": 64,
+    "vocab_size": 311,
+    "beta": 0.5,
+    "ttt_lr": 0.001,
+    "ttt_steps": 1,
+    "num_samples": 200,
+    "best_of_n": 5,
+    "peft_type": "rslora",
+    "global_budget_joules": 0.01,
+    "num_seeds": 3,
+    "seed_base": 42
+  },
+  "dataset": {
+    "path": "QAmdataset.json",
+    "use_simulated": false
+  },
+  "output_dir": "experiment_results_verified/run_200_samples"
+}

@@ -1,0 +1,11 @@
+Advanced Sovereign Amharic LLMs Report
+================================
+Welch's p-value (Baseline vs Compute-Optimal): 1.6858e-03
+Baseline Dense Perplexity:          290.2399
+Compute-Optimal Elastic Perplexity: 263.0597
+Unconstrained Proposed Perplexity:  260.9838
+Base Spearman rho: -0.0736
+Prop Spearman rho: -0.0404
+Joules per token (Compute-Optimal): 7.12e-05 J
+Active Params (Compute-Optimal):    27.15%
+BLEU-1 (Compute-Optimal):           0.8485

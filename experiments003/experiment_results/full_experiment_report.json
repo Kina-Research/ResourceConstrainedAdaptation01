@@ -1,0 +1,55 @@
+{
+  "title": "Sovereign Amharic LLM: Compute-Optimal Framework",
+  "timestamp": "2026-11-04T14:43:19.674296+00:00",
+  "rq_summary": {
+    "RQ1_best_config": {},
+    "RQ2_optimal_threshold": null,
+    "RQ3_best_peft": null
+  },
+  "pipeline_comparison": [
+    {
+      "Pipeline": "1. Dense Baseline (SFT)",
+      "Mean_Perplexity": 313.82949284692506,
+      "CI_Low": 310.1274309619748,
+      "CI_High": 317.5508609352644,
+      "Active_Params_%": 100.0,
+      "Joules_per_Token": 0.000262144,
+      "Accuracy_%": 0.0,
+      "BLEU1": 0.542713567839196,
+      "CharF1": 0.9660297239915074
+    },
+    {
+      "Pipeline": "2. Intermediate (Dense LAPT+SFT)",
+      "Mean_Perplexity": 273.0191235949646,
+      "CI_Low": 266.3270652750889,
+      "CI_High": 279.4111757594052,
+      "Active_Params_%": 100.0,
+      "Joules_per_Token": 0.000262144,
+      "Accuracy_%": 22.61306532663317,
+      "BLEU1": 1.0,
+      "CharF1": 1.0752792617775622
+    },
+    {
+      "Pipeline": "3. Proposed Unconstrained (TTT+Routing)",
+      "Mean_Perplexity": 273.5723057591935,
+      "CI_Low": 266.9226897466172,
+      "CI_High": 280.0047024179184,
+      "Active_Params_%": 35.74120603015075,
+      "Joules_per_Token": 9.36934271356784e-05,
+      "Accuracy_%": 21.105527638190956,
+      "BLEU1": 0.9949748743718592,
+      "CharF1": 1.081888246628131
+    },
+    {
+      "Pipeline": "4. Compute-Optimal (RQ3 Adaptive Budget)",
+      "Mean_Perplexity": 275.0600541656341,
+      "CI_Low": 268.1720520626204,
+      "CI_High": 281.682366339366,
+      "Active_Params_%": 24.49748743718593,
+      "Joules_per_Token": 6.421869346733668e-05,
+      "Accuracy_%": 20.100502512562816,
+      "BLEU1": 0.9949748743718592,
+      "CharF1": 1.0734078755469127
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "files": {
+    "QAmdataset.json": {
+      "exists": true,
+      "path": "D:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\experiments003\\QAmdataset.json",
+      "size_bytes": 255983263,
+      "sha256": "0e74404783e3cbe0d96814bd6362ba5e93129c662cf34e44fa1e84cde9296570"
+    },
+    "dataset_canonical.json": {
+      "exists": true,
+      "path": "D:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\experiments003\\experiment_results\\datasets\\dataset_canonical.json",
+      "size_bytes": 255983263,
+      "sha256": "0e74404783e3cbe0d96814bd6362ba5e93129c662cf34e44fa1e84cde9296570"
+    },
+    "simulated_dataset.json": {
+      "exists": true,
+      "path": "D:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\experiments003\\experiment_results\\datasets\\simulated_dataset.json",
+      "size_bytes": 36024,
+      "sha256": "1c6e4002de05811c84e0e5d20722977954e2ab1b09a52df252bb23d307735334"
+    },
+    "dataset_expanded.json": {
+      "exists": true,
+      "path": "D:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\resourcedataset\\dataset_expanded.json",
+      "size_bytes": 255983263,
+      "sha256": "0e74404783e3cbe0d96814bd6362ba5e93129c662cf34e44fa1e84cde9296570"
+    }
+  },
+  "corpus_statistics": {
+    "total_qa_pairs": 1201750,
+    "unique_inputs": 1201750,
+    "unique_outputs": 52,
+    "empty_inputs": 0,
+    "empty_outputs": 0,
+    "mean_input_words": 11.24,
+    "mean_output_words": 2.09,
+    "mean_input_chars": 57.12,
+    "mean_output_chars": 8.78
+  },
+  "pipeline_subset_verification": {
+    "num_samples_80": {
+      "qa_records_loaded": 80,
+      "total_extracted_words_in_records": 1097,
+      "vocab_size_in_records": 276,
+      "evaluated_token_stream_length": 80,
+      "evaluated_next_token_transitions": 79,
+      "mean_token_complexity": 0.2148,
+      "std_token_complexity": 0.2326,
+      "top_10_words_frequency_share": 0.2242,
+      "unique_tokens_in_eval_window": 62
+    },
+    "num_samples_100": {
+      "qa_records_loaded": 100,
+      "total_extracted_words_in_records": 1376,
+      "vocab_size_in_records": 287,
+      "evaluated_token_stream_length": 100,
+      "evaluated_next_token_transitions": 99,
+      "mean_token_complexity": 0.2105,
+      "std_token_complexity": 0.2298,
+      "top_10_words_frequency_share": 0.2246,
+      "unique_tokens_in_eval_window": 75
+    },
+    "num_samples_200": {
+      "qa_records_loaded": 200,
+      "total_extracted_words_in_records": 2716,
+      "vocab_size_in_records": 311,
+      "evaluated_token_stream_length": 200,
+      "evaluated_next_token_transitions": 199,
+      "mean_token_complexity": 0.2302,
+      "std_token_complexity": 0.2535,
+      "top_10_words_frequency_share": 0.218,
+      "unique_tokens_in_eval_window": 119
+    },
+    "num_samples_500": {
+      "qa_records_loaded": 500,
+      "total_extracted_words_in_records": 6720,
+      "vocab_size_in_records": 314,
+      "evaluated_token_stream_length": 500,
+      "evaluated_next_token_transitions": 499,
+      "mean_token_complexity": 0.2588,
+      "std_token_complexity": 0.2682,
+      "top_10_words_frequency_share": 0.2129,
+      "unique_tokens_in_eval_window": 194
+    },
+    "num_samples_1422": {
+      "qa_records_loaded": 1422,
+      "total_extracted_words_in_records": 19113,
+      "vocab_size_in_records": 314,
+      "evaluated_token_stream_length": 1422,
+      "evaluated_next_token_transitions": 1421,
+      "mean_token_complexity": 0.2728,
+      "std_token_complexity": 0.2755,
+      "top_10_words_frequency_share": 0.2079,
+      "unique_tokens_in_eval_window": 288
+    }
+  },
+  "simulated_dataset_statistics": {
+    "num_entries": 500,
+    "keys": [
+      "token_id",
+      "complexity"
+    ],
+    "max_token_id": 308,
+    "min_complexity": 0.0031847134,
+    "max_complexity": 0.9808917046
+  }
+}

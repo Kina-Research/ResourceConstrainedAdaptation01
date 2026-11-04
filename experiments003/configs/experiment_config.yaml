@@ -1,0 +1,32 @@
+created: '2026-05-01T14:35:46.807604Z'
+hyperparameters:
+  best_of_n: 5
+  beta: 0.5
+  data_path: QAmdataset.json
+  generate_synthetic: false
+  git_commit: false
+  global_budget_joules: 0.01
+  hidden_dim: 64
+  init_project: true
+  lambda_tradeoff: 0.1
+  num_experts: 8
+  num_samples: 80
+  num_seeds: 1
+  output_dir: experiment_results
+  peft_type: rslora
+  routing_threshold: 15.0
+  run_budget_ablation: false
+  run_grid_search: false
+  run_rq1_ablation: true
+  run_rq2_ablation: true
+  run_rq3_ablation: true
+  seed: 42
+  ttt_lr: 0.001
+  ttt_steps: 1
+  use_simulated_data: false
+  vocab_size: 1000
+project: Sovereign Amharic LLM Research
+rq_targets:
+- RQ1-ComputeOptimal
+- RQ2-MorphologicalRouting
+- RQ3-GreenAI

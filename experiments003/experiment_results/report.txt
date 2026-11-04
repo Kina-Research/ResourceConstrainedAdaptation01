@@ -1,0 +1,16 @@
+Sovereign Amharic LLMs Experiment Report
+=========================================
+Baseline Perplexity: 317.1779 (95% CI: 314.7648 - 319.5081)
+Intermediate Perplexity: 242.6943
+Proposed Perplexity: 245.7400 (95% CI: 233.1426 - 258.4449)
+Paired t-test p-value: 2.2404e-26
+
+Baseline Accuracy: 0.20%
+Proposed Accuracy: 13.83%
+
+Baseline Active Params: 100.00%, FLOPs: 800.0
+Proposed Active Params: 38.45%, FLOPs: 307.6
+Energy Reduction: 61.55%
+
+Baseline Objective J: -397.1779
+Proposed Objective J: -276.5016

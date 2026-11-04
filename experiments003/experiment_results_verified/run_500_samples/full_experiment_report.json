@@ -1,0 +1,63 @@
+{
+  "title": "Sovereign Amharic LLM: Compute-Optimal Framework",
+  "timestamp": "2026-11-04T12:06:19.009389+00:00",
+  "rq_summary": {
+    "RQ1_best_config": {
+      "Budget_J": 0.05,
+      "Beta": 0.7,
+      "TTT_Steps": 2.0,
+      "Perplexity": 320.5299771295521,
+      "Accuracy": 0.01002004008016032,
+      "Joules": 5.844392785571143e-05,
+      "Efficiency_AccPerJoule": 171.4470681179775
+    },
+    "RQ2_optimal_threshold": 500,
+    "RQ3_best_peft": "rslora"
+  },
+  "pipeline_comparison": [
+    {
+      "Pipeline": "1. Dense Baseline (SFT)",
+      "Mean_Perplexity": 321.4156213122045,
+      "CI_Low": 317.4807422230826,
+      "CI_High": 325.4840740213422,
+      "Active_Params_%": 100.0,
+      "Joules_per_Token": 0.000262144,
+      "Accuracy_%": 0.0,
+      "BLEU1": 0.5851703406813628,
+      "CharF1": 0.9567966280295048
+    },
+    {
+      "Pipeline": "2. Intermediate (Dense LAPT+SFT)",
+      "Mean_Perplexity": 248.77393420808065,
+      "CI_Low": 235.7780589939669,
+      "CI_High": 263.129954361977,
+      "Active_Params_%": 100.0,
+      "Joules_per_Token": 0.000262144,
+      "Accuracy_%": 14.228456913827657,
+      "BLEU1": 1.0,
+      "CharF1": 0.9531765223125962
+    },
+    {
+      "Pipeline": "3. Proposed Unconstrained (TTT+Routing)",
+      "Mean_Perplexity": 251.9967418244941,
+      "CI_Low": 238.095592175588,
+      "CI_High": 267.40091135426894,
+      "Active_Params_%": 38.45190380761523,
+      "Joules_per_Token": 0.0001007993587174,
+      "Accuracy_%": 13.627254509018035,
+      "BLEU1": 1.0,
+      "CharF1": 0.9457604604826212
+    },
+    {
+      "Pipeline": "4. Compute-Optimal (RQ3 Adaptive Budget)",
+      "Mean_Perplexity": 250.57592688868183,
+      "CI_Low": 237.49942792443773,
+      "CI_High": 264.4822231279502,
+      "Active_Params_%": 21.56813627254509,
+      "Joules_per_Token": 5.653957515030061e-05,
+      "Accuracy_%": 12.424849699398797,
+      "BLEU1": 1.0,
+      "CharF1": 0.9476243093922652
+    }
+  ]
+}

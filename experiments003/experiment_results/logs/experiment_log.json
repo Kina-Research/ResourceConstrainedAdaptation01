@@ -1,0 +1,49 @@
+[
+  {
+    "timestamp": "2026-11-04T14:42:52.428836Z",
+    "tag": "START",
+    "args": {
+      "num_seeds": 3,
+      "num_experts": 8,
+      "hidden_dim": 64,
+      "vocab_size": 1000,
+      "beta": 0.5,
+      "ttt_lr": 0.001,
+      "ttt_steps": 1,
+      "num_samples": 200,
+      "lambda_tradeoff": 0.1,
+      "output_dir": "d:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\experiments003\\experiment_results",
+      "data_path": "d:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\experiments003\\QAmdataset.json",
+      "use_simulated_data": false,
+      "peft_type": "rslora",
+      "best_of_n": 5,
+      "run_grid_search": false,
+      "global_budget_joules": 0.01,
+      "run_budget_ablation": false,
+      "run_rq1_ablation": false,
+      "run_rq2_ablation": false,
+      "run_rq3_ablation": false,
+      "init_project": false,
+      "generate_synthetic": false,
+      "git_commit": false,
+      "routing_threshold": 15.0,
+      "seed": 42
+    }
+  },
+  {
+    "timestamp": "2026-11-04T14:43:19.187243Z",
+    "tag": "BASELINES",
+    "random_ppl": 311.0,
+    "unigram_ppl": 19.999999999999996
+  },
+  {
+    "timestamp": "2026-11-04T14:43:19.676276Z",
+    "tag": "REPORT",
+    "path": "d:\\AMUPHD2015\\Papers\\3Resource-Constrained AdoptationTrainingSubmitted\\kindiecoamanuscript(latex)tylorFrancis\\experiments003\\experiment_results\\full_experiment_report.json"
+  },
+  {
+    "timestamp": "2026-11-04T14:43:19.677114Z",
+    "tag": "END",
+    "status": "complete"
+  }
+]

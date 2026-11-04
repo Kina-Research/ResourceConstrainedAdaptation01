@@ -1,0 +1,13 @@
+# Track large dataset (>100 MB) and PyTorch checkpoints via Git LFS
+experiments003/QAmdataset.json filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+
+# Text & source normalization
+*.tex text eol=lf
+*.cls text eol=lf
+*.bib text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf
+

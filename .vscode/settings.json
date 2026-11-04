@@ -1,0 +1,25 @@
+{
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (XeLaTeX + Biber)",
+            "tools": ["latexmk-xelatex"]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-xelatex",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.recipe.default": "latexmk (XeLaTeX + Biber)"
+}
